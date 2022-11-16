@@ -42,7 +42,7 @@ int ConvertFromRoman (std::string s) {
 			return 0;
 		}
 		int b = 0;
-		if(i + 1 < sizeof(s)) {
+		if(i + 1 < s.length()) {
 			b = RomanToArabic( s[i + 1] );
 		}
 		//Two values should be evaluated together, for example IV = 4, 
