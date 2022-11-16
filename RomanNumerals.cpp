@@ -88,7 +88,7 @@ int ConvertFromRoman (std::string s) {
 			break;
 		}
 		if(i - 1 >= 0) {
-			//Edge case: numeral is not written in descending order. XMM (990 + 1000) is not valid. Should be: MXM (1000 + 990)
+			//Edge case: numeral is not written in descending order. XMM (990 + 1000) is not valid. Should be: MCMXC (1000 + 900 + 90)
 			if(values[i] > values[i - 1]) {
 				std::cout << "Caught Exception: the roman numeral is not in descending order." << std::endl << std::endl;
 				return 0;
